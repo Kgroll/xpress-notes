@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 apiRoutes(app);
 htmlRoutes(app);
-//app.use(htmlRoutes);
+
 
 
 

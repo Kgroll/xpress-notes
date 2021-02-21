@@ -1,5 +1,5 @@
 const path = require("path");
-//const router = require("express").Router();
+
 
 
 module.exports = function(app) {
@@ -7,11 +7,13 @@ module.exports = function(app) {
 app.get("/notes", (req, res) => {
     res.sendFile(path.join(__dirname, "../Develop/public/notes.html"));
 });
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../Develop/public/index.html"));
 });
-
+app.get("/styles", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Develop/public/assets/css/styles.css"));
+})
 };
 
-
+ 
 
