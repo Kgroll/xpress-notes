@@ -6,11 +6,13 @@ const app = express();
 const apiRoutes = require('./routes/apiRoutes.js');
 const htmlRoutes = require('./routes/htmlRoutes.js');
 
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+apiRoutes(app);
+htmlRoutes(app);
+//app.use(htmlRoutes);
 
 
 
