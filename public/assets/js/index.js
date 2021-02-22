@@ -4,7 +4,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
-if (window.location.pathname === './notes') {
+if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -41,29 +41,21 @@ const saveNote = (note) =>
     },
     body: JSON.stringify(note),
   });
-//DEK
+
 const deleteNote = (id) =>
-  fetch(`/api/notes${id}`, {
+  fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
     },
   });
-//EDIT
-  const editNote = (id) =>
-    fetch(`/api/notes/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type' : 'application/json',
-      }
-    });
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
 
   if (activeNote.id) {
-   // noteTitle.setAttribute('readonly', true);
-    //noteText.setAttribute('readonly', true);
+    noteTitle.setAttribute('readonly', true);
+    noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.title;
   } else {
@@ -176,7 +168,7 @@ const renderNoteList = async (notes) => {
 };
 
 // Gets notes from the db and renders them to the sidebar
-const getAndRenderNotes = () => getNotes().then(renderNoteList(data));
+const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
 if (window.location.pathname === '/notes') {
   saveNoteBtn.addEventListener('click', handleNoteSave);
