@@ -19,7 +19,7 @@
 
   ## Installation
 
-  The project can be installed from the Heroku at  https://floating-basin-40312.herokuapp.com/
+  The project can be installed from the Heroku at  https://floating-basin-40312.herokuapp.com/ or from GitHub at https://kgroll.github.io/xpress-notes/
 
   ## Features
 
