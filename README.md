@@ -8,9 +8,7 @@
   * [Installation](#installation)
 
   * [Features](#features)
-
-  * [License](#license)
-
+   
   * [Questions](#questions)
 
   ## Descripition
@@ -19,7 +17,7 @@
 
   ## Installation
 
-  The project can be installed from the Heroku at https://floating-basin-40312.herokuapp.com
+  The project can be installed from the Heroku at  https://floating-basin-40312.herokuapp.com/ or from GitHub at https://kgroll.github.io/xpress-notes/
 
   ## Features
 
@@ -27,7 +25,10 @@
 
   ## Screen shots
 
-  ![image](https://user-images.githubusercontent.com/75186217/108650385-765dc680-748d-11eb-84f2-300891fb03cb.png)
+   ![note1](https://user-images.githubusercontent.com/75186217/116787711-acae5800-aa73-11eb-8c1c-8b17ec745e18.jpg)
+   
+   ![notes2](https://user-images.githubusercontent.com/75186217/116787714-b2a43900-aa73-11eb-82c9-629748cc2b5e.jpg)
+
 
   ## Questions
 
