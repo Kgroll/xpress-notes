@@ -8,9 +8,7 @@
   * [Installation](#installation)
 
   * [Features](#features)
-
-  * [License](#license)
-
+   
   * [Questions](#questions)
 
   ## Descripition
